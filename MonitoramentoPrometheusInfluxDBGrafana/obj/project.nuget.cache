@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GC//dQmmAWnKtaD0/w98/JxOF1G1yAdH9v1T+zCtEpjch0v+i3kyDLF5fx4ATuXijxnv8juEGFSU0HGPFBN2dA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Beatriz Alcântara\\source\\repos\\MonitoramentoPrometheusInfluxDBGrafana\\MonitoramentoPrometheusInfluxDBGrafana\\MonitoramentoPrometheusInfluxDBGrafana.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Beatriz Alcântara\\.nuget\\packages\\prometheus-net\\4.2.0\\prometheus-net.4.2.0.nupkg.sha512",
+    "C:\\Users\\Beatriz Alcântara\\.nuget\\packages\\prometheus-net.aspnetcore\\4.2.0\\prometheus-net.aspnetcore.4.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
