@@ -66,10 +66,14 @@
 - Criar um Scraper
 
 Se você não souber como criar assista o video.
-  [Criando buckets e scrapers](https://www.loom.com/share/3a93eeab2e7442efb256c935a35eb0d6)
+  [Criando buckets e scrapers](https://www.loom.com/share/c2c452df29414344b67c7ad470ebdabc)
 
+Vale ressaltar que na opção "TArget URL" para criar o scraper você deve informar o endpoint de métricas da sua API.
+Após isso você quando você rodar a sua API e começar a fazer requisições para ela os dados vão começar a serem inseridos nos buckets e você vai poder visualizar que eles estão sendo salvos você pode ir na opção **Explore**
 
+<img src="./docs/explore-influx.png"/>
 
+## Criando Dashboard no Grafana
 
   
   
