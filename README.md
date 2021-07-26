@@ -68,12 +68,21 @@
 Se você não souber como criar assista o video.
   [Criando buckets e scrapers](https://www.loom.com/share/c2c452df29414344b67c7ad470ebdabc)
 
-Vale ressaltar que na opção "TArget URL" para criar o scraper você deve informar o endpoint de métricas da sua API.
+Vale ressaltar que na opção "Target URL" para criar o scraper você deve informar o endpoint de métricas da sua API.
 Após isso você quando você rodar a sua API e começar a fazer requisições para ela os dados vão começar a serem inseridos nos buckets e você vai poder visualizar que eles estão sendo salvos você pode ir na opção **Explore**
 
-<img src="./docs/explore-influx.png"/>
+<img src="./docs/explore-influx.PNG"/>
 
 ## Criando Dashboard no Grafana
+Depois de ter instalado o grafana você deve acessar o endereço ```http://localhost:3000```, fazer login e começar os preparativos para visualizar os seus dados que estão armazenados no InfluxDB. Para isso você deve:
 
-  
+- Adicionar a fonte de dados do InfluxDB
+- Criar o Dashboard de forma que cada quadro represente uma query ao Bucket
+
+Assista o [vídeo](https://www.loom.com/share/ecfab9b189d24a79a2fb48fb3faf78d9) para saber como fazer os dois passos anteriores.
+
+Uma informação que acho relevante citar aqui é: você pode verificar os tipos de dados disponibilizados pela ferramenta prometheus-net.AspNetCore olhando o seu endpoint ```/metrics```. Cada métrica tem um breve resumo com a sua descrição (#HELP) e tipo (#TYPE).
+
+
+  ![exemplo de métricas](./docs/exemplo-metrics.PNG)
   
