@@ -36,7 +36,7 @@
   - Na janela que irá abrir selecione a aba **Procurar** e digite o nome do pacote.
   - Após encontrar o pacote selecione ele e instale na sua solução.
   
-  [Imagem]
+  ![imagem nuget](./docs/nuget.PNG)
   
   Após fazer isso basta você adicionar o middleWare do prometheus para expor as metricas da sua API no endpoint ```/metrics```. O ```app.UseHttpMetrics()``` deve ser posto após ```app.UseRouting()````.
   
@@ -57,7 +57,7 @@
   
   Quando você rodar a sua API e consultar o endpoint ```/metrics``` verá o seguinte resultado:
   
-  [imagem]
+  ![imagem metrics endpoint](./docs/metrrics.PNG)
   
   ## Salvando as métricas no InfluxDB
   O InfluxDB tem os buckets que são onde as métricas são armazenadas, porém com Asp.net core você só tem ferramentas/pacotes que te possibilitam escrever e consultar esse bucket não tem um pacote que colete e insira os dados diretamente no bucket. Para isso o InfluxDB também oferece os scrapers que são coletores que coletam dados de um endpoint que você informa e que expõe as métricas no [padrão de escrita Prometheus](https://prometheus.io/docs/instrumenting/exposition_formats/). Esses Scrapers ficam varrendo o endpoint que você informou e guarda os dados que encontra no bucket que você informou.
