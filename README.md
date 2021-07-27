@@ -81,6 +81,7 @@ Depois de ter instalado o grafana você deve acessar o endereço ```http://local
 
 Assista o [vídeo](https://www.loom.com/share/ecfab9b189d24a79a2fb48fb3faf78d9) para saber como fazer os dois passos anteriores.
 
+Se você não conhece a forma de escrita com Influx e não tem intimidade com ela você pode utilizar o construtor de query (Query Builder), selecionar os parâmetros que você quer visualizar e depois copiar o script gerado em **Script Editor** (Esse procedimento é mostrado no vídeo sugerido logo acima).
 Uma informação que acho relevante citar aqui é: você pode verificar os tipos de dados disponibilizados pela ferramenta prometheus-net.AspNetCore olhando o seu endpoint ```/metrics```. Cada métrica tem um breve resumo com a sua descrição (#HELP) e tipo (#TYPE).
 
   ![exemplo de métricas](./docs/exemplo-metrics.PNG)
